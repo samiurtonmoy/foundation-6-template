@@ -4,35 +4,32 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Foundation Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
 
 
-  
-      <div class="top-bar">
-        <div class="top-bar-title">
-          <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-            <button class="menu-icon dark" type="button" data-toggle></button>
-          </span>
-          <strong>Site Title</strong>
-        </div>
-        <div>
-          <div id="responsive-menu">
-            <div class="top-bar-right">
-              <ul class="medium-horizontal vertical menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          </div>
+
+    <div class="title-bar" data-responsive-toggle="top-nav-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="top-nav-menu">
+      <div class="top-bar-right">
+        <div class="menu-centered">
+          <ul class="medium-horizontal vertical menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-
+    </div>
     <!-- End of Navigation Section -->
 
 
@@ -179,7 +176,7 @@
       </div>
       <div class="row">
         <div class="small-12 medium-9 medium-centered columns">
-          <form data-abide novalidate>
+          <form method="POST" data-abide novalidate>
             <div data-abide-error class="alert callout" style="display: none;">
               <p><i class="fi-alert"></i> There are some errors in your form.</p>
             </div>
